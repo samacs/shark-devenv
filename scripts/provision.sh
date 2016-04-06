@@ -150,6 +150,9 @@ export LANG="en_US.UTF-8"
 export PS1="[\[\033[1;35m\]\u\[\033[0m\]@\[\033[36m\]\h\[\033[0m\]:\[\033[1;37m\]\w\[\033[0m\]]$ "
 
 alias get-repositories='bash /vagrant/scripts/get-repositories.sh'
+alias goto-api='cd /vagrant/pos-api'
+alias goto-pos='cd /vagrant/pos'
+
 alias ls="ls --color=auto"
 alias grep='grep --color=auto'
 alias egrep='egrep --color=auto'
@@ -187,13 +190,20 @@ apt-get -y autoremove
 apt-get -y autoclean
 apt-get -y clean
 
-################################################################################
-# Welcome screen
-################################################################################
 echo "#####################################################################################"
-echo "# Welcome to the Shark project development environment!                              "
+echo "# Welcome to the Shark Web Intelligence project development environment!             "
+echo "#                                                                                    "
+echo "# You are not yet done! You need to do the following to finish the setup:            "
+echo "# 1) Get all the project repositories:                                               "
+echo "#    Run: get-repositories                                                           "
+echo "# 2) Get all the Rails project gems:                                                 "
+echo "#    Run: goto-api; bundle install                                                   "
+echo "# 3) Set up the application API keys. Put them in ~/.secret_keys.sh                  "
 echo "#                                                                                    "
 echo "# Info:                                                                              "
 echo "# PostreSQL user 'vagrant' created without password. 'stores' database created.      "
+echo "#                                                                                    "
+echo "# Important:                                                                         "
+echo "# See the README file in each project for further instructions.                      "
 echo "#                                                                                    "
 echo "#####################################################################################"
