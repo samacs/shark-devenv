@@ -154,6 +154,7 @@ alias goto-api='cd /vagrant/pos-api'
 alias goto-pos='cd /vagrant/pos'
 
 alias ls="ls --color=auto"
+alias ll="ls --color=auto -lAh"
 alias grep='grep --color=auto'
 alias egrep='egrep --color=auto'
 alias fgrep='fgrep --color=auto'
