@@ -1,0 +1,11 @@
+# Ignore everything
+/*
+# Ignore Emacs' temporary files
+/**/[.][#]*
+
+# Do not ignore these files
+!/scripts/provision.sh
+!/scripts/get-repositories.sh
+!.gitignore
+!README.md
+!Vagrantfile
